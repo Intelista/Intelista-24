@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import must from "../images/must.png";
+const must = "/images/must.png";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,13 +25,13 @@ export default function Navbar() {
             <div className="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     <li className="flex">
-                        <Link to="/home" className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400">Home</Link>
+                        <Link to="/" className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400">Home</Link>
                     </li>
                     <li className="flex">
                         <Link to="/event" className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400">Event</Link>
                     </li>
                 </ul>
-                <Link to="/home" aria-label="Back to homepage" className="flex items-center p-2">
+                <Link to="/" aria-label="Back to homepage" className="flex items-center p-2">
                     <img src={must} alt="Logo" className="w-8 h-8" />
                 </Link>
                 <ul className="items-stretch hidden space-x-3 md:flex">
@@ -63,7 +63,7 @@ export default function Navbar() {
             </div>
             <ul className={`absolute top-16 left-0 w-full bg-black bg-opacity-70 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <li className="flex">
-                    <Link to="/home" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Home</strong></Link>
+                    <Link to="/" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Home</strong></Link>
                 </li>
                 <li className="flex">
                     <Link to="/event" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Event</strong></Link>

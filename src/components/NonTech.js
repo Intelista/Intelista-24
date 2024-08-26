@@ -1,10 +1,11 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import baloon from '../images/baloon.gif';
-import chess from '../images/chess.gif';
-import bioscope from '../images/bioscope.gif';
-import Freefire from '../images/Freefire.gif';
-import treasurehunt from '../images/treasurehunt.gif'
+const baloon = '/images/baloon.gif';
+const chess = '/images/chess.gif';
+
+const bioscope = '/images/bioscope.gif';
+const Freefire = '/images/Freefire.gif';
+const treasurehunt = '/images/treasurehunt.gif'
 
 export default function NonTech(){
   const navigate = useNavigate();

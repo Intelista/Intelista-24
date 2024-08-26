@@ -1,11 +1,11 @@
 import React from "react";
 import "../App.css";
-import tech from '../images/technicaloverall.gif';
-import bgVideo from '../images/bgvedio.mp4';
-import nontech from '../images/nontech.gif';
+
 import Footer from "./Footer";
 import { Link, useNavigate } from "react-router-dom";
-
+const tech = '/images/technicaloverall.gif';
+const bgVideo = '/images/bgvedio.mp4';
+const nontech = '/images/nontech.gif';
 export default function Event() {
     const navigate = useNavigate();
 

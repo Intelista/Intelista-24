@@ -1,8 +1,8 @@
 import React from 'react';
 import Contact from '../components/Contact'; // Adjust the import path based on your project structure
 import Footer from '../components/Footer'; // Correctly import Footer component
-import abgvideo from '../images/abgvideo.mp4';
-import logo from '../images/logo.png';
+const abgvideo = '/images/abgvideo.mp4';
+const logo ='/images/logo.png';
 
 export default function About() {
   return (

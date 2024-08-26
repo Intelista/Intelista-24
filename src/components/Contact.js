@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../images/contact.png";
+const contact = "/images/contact.png";
 
 export default function Contact() {
   return (

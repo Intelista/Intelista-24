@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import audio from '../images/JackSparrow - Bgm.mp3'; // Correct import path
+const audio = '/images/JackSparrow - Bgm.mp3'; // Correct import path
 
 const AudioPlayer = ({ autoPlay, loop }) => {
   const audioRef = useRef(null);

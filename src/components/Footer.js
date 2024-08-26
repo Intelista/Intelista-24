@@ -1,5 +1,5 @@
 import React from 'react';
-import must from "../images/must.png";
+const must =  "../images/must.png";
 
 export default function Footer() {
   return (

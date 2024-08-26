@@ -1,33 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Timer from '../components/Timer';
-import videoSrc from '../images/homepage.mp4';
-import audioSrc from '../images/JackSparrow - Bgm.mp3';
 import Footer from '../components/Footer';
 import AudioPlayer from '../components/AudioPlayer';
-import intelista from '../images/Intelista.png';
 import '../App.css'; // Import the CSS file
 
 export default function Home() {
-
   return (
     <div className="relative min-h-screen flex flex-col">
-        <h1 className="blu text-5xl font-bold text-white text-center">Symposium Begins</h1>
-        <div className="flex items-center translate-y-[-2.10rem] justify-center p-4">
+      <h1 className="blu text-5xl font-bold text-white text-center">Symposium Begins</h1>
+
+      <div className="flex items-center translate-y-[-2.10rem] justify-center p-4">
         <img
-          src={intelista}
+          src="/images/Intelista.png" // Use a relative URL path
           alt="Intelista"
-          className="w-full max-w-lg h-auto" 
+          className="w-full max-w-lg h-auto"
         />
       </div>
 
-      <AudioPlayer src={audioSrc} autoPlay loop />
+      <AudioPlayer src="/images/JackSparrow-Bgm.mp3" autoPlay loop /> {/* Use a relative URL path */}
 
       <div className="flex-grow">
         <div className="p-4 translate-y-[-5.10rem] sm:p-8 md:p-12 lg:p-16 mx-auto flex-grow">
           <div className="flex flex-col max-w-4xl mx-auto overflow-hidden rounded-lg">
             <video
-              src={videoSrc}
+              src="/images/homepage.mp4" // Use a relative URL path
               className="w-full h-auto object-cover bg-gray-500 dark:bg-gray-500"
               autoPlay
               loop
@@ -67,14 +64,9 @@ export default function Home() {
               <span></span>
               <span></span>
               <span></span>
-            Register
+              Register
             </a>
-
-            
-
-           
           </div>
-
         </div>
         <Footer />
       </div>
