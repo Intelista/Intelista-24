@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd6a4d02.css",
-    "main.js": "/static/js/main.2bbdbcbb.js",
-    "index.html": "/index.html",
-    "main.bd6a4d02.css.map": "/static/css/main.bd6a4d02.css.map",
-    "main.2bbdbcbb.js.map": "/static/js/main.2bbdbcbb.js.map"
+    "main.css": "/Intelista-24/static/css/main.bd6a4d02.css",
+    "main.js": "/Intelista-24/static/js/main.0e6c484f.js",
+    "index.html": "/Intelista-24/index.html",
+    "main.bd6a4d02.css.map": "/Intelista-24/static/css/main.bd6a4d02.css.map",
+    "main.0e6c484f.js.map": "/Intelista-24/static/js/main.0e6c484f.js.map"
   },
   "entrypoints": [
     "static/css/main.bd6a4d02.css",
-    "static/js/main.2bbdbcbb.js"
+    "static/js/main.0e6c484f.js"
   ]
 }
